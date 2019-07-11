@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="ICS0" version="1"
+	xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+	xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+						http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+						http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" >
+	<organizations default="X0070E-US.SSB_ORG">
+		<organization identifier="X0070E-US.SSB_ORG">
+			<title>Advanced Leasing Strategies </title>
+				<item identifier="X0070E-US.SSB_L5" identifierref="X0070E-US.SSB_L5_RES">
+					<title>Advanced Leasing Strategies </title>
+				</item>
+			<metadata>
+				<schema>ADL SCORM</schema>
+				<schemaversion>1.2</schemaversion>
+				<adlcp:location>scorm_xml/content.xml</adlcp:location>
+			</metadata>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="X0070E-US.SSB_L5_RES" type="webcontent" adlcp:scormtype="sco" href="index.html">
+			<file href="index.html"/>
+		</resource>
+	</resources>
+</manifest>

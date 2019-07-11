@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<course>
+	<config>
+		<course_metadata>
+			<courseTitle><![CDATA[Sales Scenarios]]></courseTitle>		
+			<interface>
+				<glossaryLink><![CDATA[Glossary]]></glossaryLink>
+				<resourceLink><![CDATA[Resources]]></resourceLink>
+				<helpLink><![CDATA[Help]]></helpLink>
+				<customerBackground><![CDATA[Customer Background]]></customerBackground>
+				<satisfationMeter><![CDATA[]]></satisfationMeter>
+				<next><![CDATA[Next]]></next>
+				<back><![CDATA[Back]]></back>
+			</interface>
+		</course_metadata>
+	</config>
+	<pages>
+		<page page-type="introduction">
+			<header><![CDATA[Sales Scenarios]]></header>
+			<subHeading><![CDATA[Hello and welcome to this sales simulation exercise. In this simulation, you play Sam Boland, Senior Executive Sales at ABC Cars, a new and preowned car dealership. It's a busy Monday morning and you are seeing many prospective customers in the store.]]></subHeading>
+			<bodyContent><![CDATA[Who would you like to meet first?]]></bodyContent>
+			<instruction><![CDATA[Select each profile to view more details.]]></instruction>
+			<profiles>
+				<option option-value="p1">
+					<optionImg><![CDATA[img-01.jpg]]></optionImg>
+					<optionTitle><![CDATA[Customer Profile #1]]></optionTitle>
+				</option>
+				<option option-value="p2">
+					<optionImg><![CDATA[img-02.jpg]]></optionImg>
+					<optionTitle><![CDATA[Customer Profile #2]]></optionTitle>
+				</option>
+				<option option-value="p3">
+					<optionImg><![CDATA[img-03.jpg]]></optionImg>
+					<optionTitle><![CDATA[Customer Profile #3]]></optionTitle>
+				</option>
+			</profiles>
+		</page>
+	</pages>
+</course>

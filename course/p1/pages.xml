@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<profile>
+	<profileTitle><![CDATA[Amanda]]></profileTitle>
+	<characters>
+		<character character-id="char-1"><![CDATA[Amanda]]></character>
+		<character character-id="char-2"><![CDATA[]]></character>
+	</characters>
+	<stages>
+		<stage stage-id="stg-0"><![CDATA[]]></stage>
+		<stage stage-id="stg-1"><![CDATA[Introduce Leasing Option]]></stage>
+		<stage stage-id="stg-2"><![CDATA[Listen for Customer Concerns]]></stage>
+		<stage stage-id="stg-3"><![CDATA[Address Customer Concerns]]></stage>
+		<stage stage-id="stg-4"><![CDATA[Check for Acceptance]]></stage>
+	</stages>
+	<pages>
+		<page page-type="assessment" page-id="P1" stage-id="stg-1">
+			<bodyContent><![CDATA[]]></bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Slight_Smile.png" class="wow fadeInUp" alt="P1"/>]]></imgContent>
+			<question><![CDATA[Ed ushers Rhea into your office. How would you like to start the conversation?]]></question>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<answer goto="P1NOK1" score="0"><![CDATA[Hi Rhea, I am Brian Harper. I hear you want to pay cash for your new car. Are you sure you want to do that?]]></answer>
+			<answer goto="P1MB1" score="3"><![CDATA[Hi Rhea, I am Brian Harper. The GLE 350 is a good choice. I see you want to pay cash. Is that correct?]]></answer>	
+			<answer goto="P1OK1" score="5"><![CDATA[Hello and welcome to Chrome Mercedes-Benz. I am Brian Harper. Congratulations on selecting the GLE 350. It’s an excellent choice.]]></answer>			
+			<feedback><![CDATA[<p>Your goal at the beginning of a conversation with a potential customer should be to build rapport and establish trust.</p>]]></feedback>
+		</page>
+		<page page-type="assessment" page-id="P1OK1" stage-id="stg-1">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Thank you, Brian. This is my first Mercedes-Benz and I'm very excited!</div>]]></user1Comment>
+			</bodyContent>	
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Smiling_01.png" class="wow fadeInUp" alt="P1OK1"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How would you like to respond to this?]]></question>
+	        <answer goto="P1MB2" score="3"><![CDATA[I know you would like to pay cash, but trust me; I've been doing this for a while now. There are other options we can offer customers like you to save you some money on your car.]]></answer>
+			<answer goto="P1OK2" score="5"><![CDATA[That's great! I’ll try to be as quick as possible with your paperwork. Let's take a look at the terms that you have agreed to; here is what your cash price will be for the GLE you selected.]]></answer>	
+			<answer goto="P1NOK2" score="0"><![CDATA[Ok, sounds good. I just have a few things for you to sign and we’ll have you on your way.]]></answer>
+			<feedback><![CDATA[<p>That was an excellent start. It is important to reinforce the customer’s vehicle choice and share in their excitement. Remember, too, that Rhea is probably anxious to take possession of her new car and get started on her ownership experience. So it is important to respect her time, listen to what she has to say, and begin to position your products and services to meet her needs.</p>]]></feedback>
+		</page>	
+		
+		<page page-type="assessment" page-id="P1NOK1" stage-id="stg-1">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Hi, this is my first Mercedes-Benz so I’m looking forward to owning it outright.</div>]]></user1Comment>
+			</bodyContent>		
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Not_Interested.png" class="wow fadeInUp" alt="P1MB1"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How would you like to proceed?]]></question>
+			<answer goto="P1NOK2" score="0"><![CDATA[Sure, here you go. Please sign here and we’ll have you on your way.]]></answer>	
+			<answer goto="P1MB2" score="3"><![CDATA[Sure, but have you ever considered leasing? Let me tell you about the great leasing options we offer customers like you.]]></answer>
+            <answer goto="P1OK2" score="5"><![CDATA[Of course, I have the cash price right here for you. Let's take a look at the terms that you have agreed to.]]></answer>				
+			<feedback><![CDATA[<p> Not bad, however, it is important to reinforce the customer’s choice of vehicle. Share in their excitement! Also, make sure you take the time to build a rapport with Rhea before starting your finance process. Remember, there is a transfer of trust that must take place between Rhea’s experience with your salesperson and now, with you. The customer must feel at ease with you in order to trust this next part of the sales process.</p>]]></feedback>
+		</page>
+		<page page-type="assessment" page-id="P1MB1" stage-id="stg-1">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Hi, that’s right. I'm here to buy the car outright. This is my first Mercedes-Benz and I would prefer to pay cash.</div>]]></user1Comment>
+			</bodyContent>		
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Excited.png" class="wow fadeInUp" alt="P1MB1"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How would you like to proceed?]]></question>
+			<answer goto="P1MB2" score="3"><![CDATA[Sure, but first let me tell you about the great leasing options we offer customers like you.]]></answer>	
+			<answer goto="P1NOK2" score="0"><![CDATA[Sure, here you go. I just have a few things for you to sign and you’re on your way. ]]></answer>
+            <answer goto="P1OK2" score="5"><![CDATA[Of course, I have the cash price right here for you. Let me take you through the numbers.]]></answer>			
+			<feedback><![CDATA[<p> Not a bad way to introduce yourself. However, it is important to reinforce the customer’s choice of vehicle. Share in their excitement! Remember, there is a transfer of trust that must take place between Rhea’s experience with your salesperson and now, with you. The customer must feel at ease with you in order to trust this next part of the sales process.</p>]]></feedback>
+		</page>		
+		
+		<page page-type="assessment" page-id="P1OK2" stage-id="stg-2">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUpP1OK2" data-wow-delay="0.4s"><b>Rhea:</b> This looks good to me, Brian! But I see that you’ve included some other numbers here on the proposal. They seem a lot lower than the cash price I have agreed to. Can you explain what they are?</div>]]></user1Comment>
+			</bodyContent>			
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Smiling_01.png" class="wow fadeInUp" alt="P1NOK1" />]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Congratulations! You have included two <b>lease quotes</b> for Rhea. She is beginning to notice the out-of-pocket savings available to her with leasing. How would you like to respond?]]></question>
+			<answer goto="P1NOK3" score="0"><![CDATA[Well Rhea, you told me you average about 10,000 miles a year. You sound like a good low mileage leasing candidate.]]></answer>	
+			<answer goto="P1OK3" score="5"><![CDATA[I want you to know that you can leave today with the cash price you have agreed to. However, the other numbers reflect an alternate form of financing that many of our cash customers are very curious about. Before you make your final decision, I wanted to make sure you were aware of it, too. With your permission, I’d be happy to review it with you.]]></answer>	
+			<answer goto="P1MB3" score="3"><![CDATA[So Rhea, my advice to you is that it’s not a good idea to pay cash for your vehicle especially when there are several leasing options with low upfront costs. I think this is a better use of your available funds.]]></answer>	
+			<feedback><![CDATA[<p>Good job! You presented the final cash price and offered to discuss the details of the quote with Rhea. It is important that you answer Rhea’s questions directly in this way to maintain full transparency and position yourself as a credible finance professional. </p>]]></feedback>
+		</page>
+		
+		<page page-type="assessment" page-id="P1NOK2" stage-id="stg-1">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Thanks. But I see you’ve included some other numbers here. Can you please explain?</div>]]></user1Comment>
+			</bodyContent>		
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Smiling_01.png" class="wow fadeInUp" alt="P1OK1NOK1"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How would you like to proceed?]]></question>
+			<answer goto="P1NOK2NOK1" score="0"><![CDATA[Oh, that’s our Single-Pay Lease option but you told me you prefer to pay cash. So, you can ignore that. I just have a few things for you to sign and you’re on your way.]]></answer>	
+			<answer goto="P1OK3" score="5"><![CDATA[I want you to know that you can leave today with the cash price you have agreed to. However, the other numbers reflect an alternate form of financing that many of our cash customers are very curious about. Before you make your final decision, I wanted to make sure you were aware of it, too. With your permission, I’d be happy to review it with you.]]></answer>	
+			<feedback><![CDATA[<p> This is an understandable response but not the best choice. We are often too quick to accept cash from our customers without slowing down to make sure this is the best option for them. In order for you to maximize the leasing potential in your dealership, be sure to include a lease quote on every proposal, for every customer, each and every time!</p>]]></feedback>
+		</page>
+		
+		<page page-type="assessment" page-id="P1MB2" stage-id="stg-1">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> What do you mean ‘customers like me?’ Do you have special programs for cash customers?</div>]]></user1Comment>
+			</bodyContent>			
+			<imgContent><![CDATA[<img src="course/p1/assets/images/skeptical_new.png" class="wow fadeInUp" alt="P1OK1OK1" />]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How would you like to proceed?]]></question>
+			<answer goto="P1MB2OK1" score="5"><![CDATA[Well, many of my cash customers see the benefit in acquiring their vehicles with less money out-of-pocket. This can free up their cash to be used in other ways. We have several leasing options to choose from and I’m sure one would be a good choice for you.]]></answer>	
+			<answer goto="P1NOK2NOK2" score="0"><![CDATA[Well, cash is never a good idea. So, I recommend leasing to all my cash customers.]]></answer>
+			<feedback><![CDATA[<p>Not bad, but not quite right. It's good to show enthusiasm but you need to slow down, build rapport, and ask more questions. Remember, Rhea has probably spent a great deal of time with your salesperson and had begun to build trust in them. Take the time to complete the customer’s transition from sales to finance and begin to position yourself as a credible finance professional.</p>]]></feedback>
+		</page>
+		
+		
+		<page page-type="assessment" page-id="P1MB2OK1" stage-id="stg-1">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Leasing? I'm not sure that's something for me. I’ve always paid cash.</div>]]></user1Comment>
+			</bodyContent>	
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Smiling_01.png" class="wow fadeInUp" alt="P1OK2"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[It looks like Rhea hasn’t considered leasing before, but it could still be a good option for her. How would you like to proceed?]]></question>
+			<answer goto="P1MB3" score="3"><![CDATA[So Rhea, my advice to you is that it’s not a good idea to pay cash for your vehicle especially when there are several leasing options with low upfront costs. I think this is a better use of your available funds.]]></answer>	
+			<answer goto="P1OK3" score="5"><![CDATA[I want you to know that you can leave today with the cash price you have agreed to. However, before you make your final decision, I wanted to make sure you were aware of an alternate form of financing too. With your permission, I’d be happy to review it with you.]]></answer>	
+			<answer goto="P1NOK3" score="0"><![CDATA[Well Rhea, you told me you average about 10,000 miles a year. You sound like a good low mileage leasing candidate.]]></answer>	
+            <feedback><![CDATA[<p> That was a good response. You have reassured the customer that you might have a better option to offer them when it comes to acquiring their vehicle. </p>]]></feedback>
+		</page>
+				
+		<page page-type="assessment" page-id="P1OK3" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Sure. I have to admit, I am curious why the numbers look so low compared to my cash price.</div>]]></user1Comment>
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Smiling_01.png" class="wow fadeInUp" alt="P1MB2"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Rhea is curious about the Single-Pay Lease you have proposed. Go ahead, give her the details now.]]></question>
+			<answer goto="P1NOK4" score="0"><![CDATA[It’s a Single-Pay Lease. Many of my cash customers are opting for it!]]></answer>	
+			<answer goto="P1MB4" score="3"><![CDATA[Well, it’s a Single-Pay Lease and as you can see, the out-of-pocket expense can be a lot less than what you would otherwise expect to pay. I think this would be a smart use of your money.]]></answer>
+			<answer goto="P1OK4" score="5"><![CDATA[I certainly understand! Many of my cash customers are surprised by the difference in the numbers. As you can see, the out-of-pocket expense can be substantially less than what you might pay otherwise. And, because you drive about 10,000 miles a year, your savings could be even more, since you likely qualify for our low-mileage program.]]></answer>	
+			<feedback><![CDATA[<p>Excellent choice! By including the Single-Pay Lease option up-front, you have made Rhea aware of the financing options she might not have even known or considered were available to her. </p>]]></feedback>
+		</page>
+		
+		<page page-type="assessment" page-id="P1NOK3" stage-id="stg-2">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> No thanks. Leasing won’t work for me. I have a long commute and besides I don’t like making monthly payments.</div>]]></user1Comment>
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/frowning_new.png" class="wow fadeInUp" alt="P1MB2"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Rhea would require some more convincing. How would you like to proceed?]]></question>
+			<answer goto="P1OK6" score="5"><![CDATA[I understand. I want to make sure your ownership experience best suits your needs. Our Single-Pay Lease offers a low-mileage option that actually could be perfect for you. And, because you would be making all of your payments up-front, you won’t receive monthly invoices.]]></answer>	
+			<answer goto="P1MB3MB1" score="3"><![CDATA[I understand. But remember we have multiple lease options to fit virtually all our customers’ needs. And I’m sure we can make it work for you too. I would be happy to discuss some of those options with you now.]]></answer>
+			<answer goto="P1NOK3NOK1" score="0"><![CDATA[I understand; leasing isn’t for everyone.]]></answer>	
+			<feedback><![CDATA[<p>Not quite right. That could be the best option for Rhea, but before suggesting a solution, make sure you fully understand Rhea’s reasons for paying cash. </p>]]></feedback>
+		</page>
+		
+		
+		<page page-type="assessment" page-id="P1MB3" stage-id="stg-2">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I don't know. I prefer paying cash and owning my vehicle!</div>]]></user1Comment>
+			</bodyContent>	
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Unsure_Neutral.png" class="wow fadeInUp" alt="P1NOK3"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Looks like Rhea isn't interested in the leasing option. How would you like to proceed now?]]></question>
+            <answer goto="P1MB3MB1" score="3"><![CDATA[I understand. But remember we have multiple lease options to fit virtually all our customers’ needs. And I’m sure we can make it work for you too. I would be happy to discuss some of those options with you now.]]></answer>			
+			<answer goto="P1OK5" score="5"><![CDATA[I understand. I know you are comfortable with owning your vehicle. What is it about ownership that is important to you?]]></answer>	
+			<answer goto="P1NOK5" score="0"><![CDATA[Sure, I understand. I just have a few things for you to sign and you’re on your way.]]></answer>
+			<feedback><![CDATA[<p>Not a good response! While cash is not always the best way to acquire a vehicle, avoid using absolute statements like this. Rhea may have good reason to want to pay cash today but we haven’t taken the time to learn what those reasons are. More importantly, we must always be careful not to be perceived as giving financial advice to our customers. It is critical to present only the specific program details in a fully transparent manner, avoiding even the slightest perception of influencing the customer’s decision.</p>]]></feedback>
+		</page>
+		
+		
+		<page page-type="assessment" page-id="P1MB3MB1" stage-id="stg-2">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="1s"><b>Rhea:</b> Hmm, ok, I have some time. How will leasing work in my case?</div>]]></user1Comment>
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Interested.png" class="wow fadeInUp" alt="P1MB4"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Rhea is curious about the leasing option you have proposed. Go ahead, give her the details now.]]></question>
+			<answer goto="P1OK4" score="5"><![CDATA[You mentioned to Ed that you drive about 10,000 miles and that you traded your vehicles every two or three years. So, I’ve included a 24-and 36-month Single-Pay Lease option for you. The payments also reflect the MBFS discount for low mileage. This program allows you to trade your vehicle at the same time intervals you are used to, giving you access to the latest Mercedes-Benz technology. It could also protect you from potential market value fluctuations. In addition, you could benefit from possible loyalty offers, savings on state sales tax (if applicable), and more!]]></answer>	
+			<answer goto="P1MB3NOK1" score="0"><![CDATA[I can assure you; this is the best use of your available funds. Many of my cash customers are opting for it so I’m sure it’s a good fit for you too.]]></answer>			
+			<feedback><![CDATA[<p> Nice approach, but try to develop a rapport with Rhea first before suggesting a product. Take it slow, ask questions, and address all of Rhea’s concerns. This will help you build credibility and establish trust.<p>]]></feedback>
+		</page>
+		
+		    <page page-type="assessment" page-id="P1OK4" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> That sounds fine, but I’m comfortable with a cash purchase. I like to own my vehicles.</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/somewhat_skeptical.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[This is good news because we now have a clear concern from Rhea; she likes to own her vehicles. What could be the best way to address Rhea's concern?]]></question>
+			<answer goto="P1NOK5" score="0"><![CDATA[Sure, I understand. I just have a few things for you to sign and you’re on your way.]]></answer>
+			<answer goto="P1MB5" score="3"><![CDATA[Why don't you take another look at the benefits of our Single-Pay Lease option?]]></answer>
+			<answer goto="P1OK5" score="5"><![CDATA[I understand. Many of my cash customers feel that way. What is it about ownership that is important to you?]]></answer>	
+			<feedback><![CDATA[<p>Good job! By mentioning the benefits of the Single-Pay Lease, Rhea is now able to decide if it is a good option for her. And remember, a key benefit of the Single-Pay Lease is that it usually requires substantially less out-of-pocket expense than the traditional cash purchase.</p>]]></feedback>
+		    </page>	
+		
+			<page page-type="assessment" page-id="P1NOK4" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Well, it doesn’t sound like something that would work for me.</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/frowning_new.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How do you wish to proceed?]]></question>
+			<answer goto="P1NOK4NOK1" score="0"><![CDATA[Well, the Single-Pay Lease isn’t for everyone but I still think leasing would be a good option for you.]]></answer>
+			<answer goto="P1OK4" score="5"><![CDATA[I understand. I just want to help you select the option that best suits your needs. Many of my cash customers feel that the Single-Pay Lease offers them increased flexibility and protection from market value fluctuations. For example, you can trade your vehicle every two or three years taking advantage of the latest Mercedes-Benz technology and benefiting from loyalty offers and possible savings on state sales tax (if applicable).]]></answer>	
+			<feedback><![CDATA[<p>Ok, you’re on the right track but make sure Rhea is ready to hear about alternate financing options before getting too specific. Remember, Rhea prefers to pay cash and she has her own reasons for doing so. She may not be receptive to a lease conversation at this time. Slow down, ask questions, and make sure you fully understand what her concerns are before suggesting a solution.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1MB4" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Interesting, but I’ve always preferred to own my vehicles.</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Unsure_Neutral.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How would you like to proceed now?]]></question>
+			<answer goto="P1MB3MB1" score="3"><![CDATA[I understand. But remember we have multiple lease options to fit virtually all our customers’ needs. And I’m sure we can make it work for you too. I would be happy to discuss some of those options with you now.]]></answer>
+			<answer goto="P1OK5" score="5"><![CDATA[I understand. I know you are comfortable with owning your vehicle. What is it about ownership that is important to you?]]></answer>	
+			<answer goto="P1NOK5" score="0"><![CDATA[Sure, I understand. Leasing isn’t for everyone. I just have a few things for you to sign and you’re on your way.]]></answer>
+			<feedback><![CDATA[<p>This is an understandable response but we must always be careful not to be perceived as giving financial advice. It is critical to present only the specific program details in a fully transparent manner, avoiding even the slightest perception of influencing the customer’s decision.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1OK5" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I'm not a big fan of monthly payments. And, I don't like paying finance charges either.</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/frowning_new.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[It looks like Rhea has two primary concerns: she doesn’t like monthly payments and also doesn’t like to pay finance charges. How would you respond to each of these concerns?]]></question>
+			<answer goto="P1NOK6" score="0"><![CDATA[Well, no one likes to make monthly payments but I can assure you that the APR we use in our lease calculations is very low.]]></answer>
+			<answer goto="P1OK6" score="5"><![CDATA[No problem. With the Mercedes-Benz Single-Pay Lease option, you make a single payment at lease inception and that’s it! There are no other monthly leasing statements, no check writing, or trips to the mailbox. And, because you would be making all your lease payments up-front, you could save even more over our traditional lease.]]></answer>	
+			<feedback><![CDATA[<p>Good work! We need to understand why ownership is important to Rhea. The more we work to identify and fully understand Rhea’s concerns, the better we are able to address them and customize a solution that best suits her needs.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1MB5" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Hmm, ok, I have some time. How will leasing work in my case?</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Interested.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Rhea is curious about the Single-Pay Lease option you have proposed. Go ahead, give her the details now.]]></question>
+			<answer goto="P1MB5NOK1" score="0"><![CDATA[Take my word for it; this is the best use of your cash.]]></answer>
+			<answer goto="P1OK6" score="5"><![CDATA[With the Mercedes-Benz Single-Pay Lease option, you make a single payment at lease inception and that’s it! There are no other monthly leasing statements, no check writing, or trips to the mailbox. Also, because you are making all your lease payments up-front, you save even more over our traditional lease. And, at the end of your lease term, you can decide whether you would like to purchase the vehicle or not.]]></answer>		
+			<feedback><![CDATA[<p>You’re on the right track! While the Single-Pay Lease may be a good fit for Rhea, remember to take the time to make sure you fully understand what her concerns are before suggesting a solution. This can help you build credibility and establish trust.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1OK6" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I see. So, if I’m understanding you correctly, I will be giving you less money today while not having to deal with monthly invoices. I guess that could work. You mentioned a discount for a low mileage driver. Could you please explain that?</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Interested.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How would you like to proceed now?]]></question>
+			<answer goto="P1NOK7" score="0"><![CDATA[You drive just 10,000 miles a year, so that's no problem! We have customers who drive much more, and they are happy with our Single-Pay Lease option. You should go for it too.]]></answer>
+			<answer goto="P1OK7" score="5"><![CDATA[Absolutely! We can custom tailor a lease to your needs. In fact, we have several options for both low and high mileage drivers. Let me show you a side-by-side comparison to give you a better idea.]]></answer>	
+			<feedback><![CDATA[<p>Excellent! This is a great way to address these customer concerns. </p>]]></feedback>
+		    </page>
+			
+			<page page-type="assessment" page-id="P1OK7" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> That would be great! A side-by-side comparison would be very helpful. But what about vehicle maintenance? Would leasing affect that too?</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Interested.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Another good point! How would you respond to Rhea's concern?]]></question>
+			<answer goto="P1NOK8" score="0"><![CDATA[Vehicle maintenance is entirely up to you. There’s no cost difference between conventional ownership and leasing.]]></answer>
+			<answer goto="P1OK8" score="5"><![CDATA[Good question! In order to honor the terms of the manufacturer’s warranty, the customer is responsible for the routine scheduled maintenance of the car. However, I can include our Prepaid Maintenance product into your lease calculation which could save you money during your ownership experience.]]></answer>	
+			<feedback><![CDATA[<p>Excellent response! Never assume Rhea is aware of all of their leasing options. A side-by-side comparison is a great way to illustrate the many benefits that leasing can offer.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1NOK7" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> That doesn’t really answer my question. Maybe we should just stick with cash.</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/skeptical_new.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How would you like to respond to Rhea?]]></question>
+			<answer goto="P1OK7" score="5"><![CDATA[I'm sorry; let me explain how a low mileage lease works. In fact, we have several options for both low and high mileage drivers. Let me show you a side-by-side comparison to give you a better idea.]]></answer>	
+			<answer goto="P1NOK7NOK1" score="0"><![CDATA[No, I wouldn’t recommend that. Cash is never a good idea. I have made countless deals for customers just like you. And not one has regretted going for our Single-Pay Lease option.]]></answer>
+			<feedback><![CDATA[<p>While your response is accurate, remember to provide all the relevant information to Rhea so that she understands how the Mercedes-Benz Single-Pay Lease will work for her.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1OK8" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> That sounds great. But I’ve heard that leasing can also mean a large lease-end bill for excess wear and use charges. Is that true?</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/relieved_new.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Rhea has revealed another concern that she didn’t share with you earlier. How would you respond to her?]]></question>
+			<answer goto="P1OK9" score="5"><![CDATA[Many of my first-time lessees have that concern, but I can assure you that MBFS knows that there will be a certain amount of reasonable wear and use on the car at the end of the lease. In fact, they’ve created a useful guide that you can use for yourself. Let me show you something. Do you have a credit card?]]></answer>	
+			<answer goto="P1NOK9" score="0"><![CDATA[Yes, you are responsible for any excess wear and use charges.]]></answer>
+			<feedback><![CDATA[<p>Awesome! By including the Prepaid Maintenance (PPM) product in Rhea’s lease, the potential savings for scheduled maintenance could be considerable compared to paying as you go.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1OK9" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Thanks, Brian! That seems very fair. Can you tell me more about your Single-Pay Lease option?</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/Excited.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Good job! Rhea is interested to know all the details of the Single-Pay Lease and has given you permission to proceed.]]></question>
+			<answer goto="P1NOK10" score="0"><![CDATA[Sure, by paying all of your lease payments upfront, you have the option of returning to our dealership every two or three years and driving the latest in Mercedes-Benz technology.]]></answer>
+			<answer goto="P1OK10" score="5"><![CDATA[I’d be happy to, Rhea. As I mentioned before, our Single-Pay Lease option can give you additional flexibility in your car-buying experience, like upgrading to a new vehicle more often or avoiding possible liability for your car's decreased value in the future. It can also help you keep pace with current technology by allowing you to drive the latest-and-greatest vehicle that Mercedes-Benz has to offer with no trade or resale concerns.]]></answer>	
+			<feedback><![CDATA[<p>The Credit Card test is used by MBFS during the grounding process and is an effective way to illustrate what might be considered excess wear and use. If the damage cannot be seen when a standard-size credit card is placed over it, it is generally not chargeable. Up to five scratches, dings or dents per exterior panel, or tears, cuts, holes, burns, or stains to the interior that fit beneath a credit card are generally not chargeable. And as always, make sure you review the excess wear and use guidelines contained in the MBFS lease contract for further details as well as the most recent copy of the First Class Finish<sup>®</sup> Lease-End Guide.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1NOK9" stage-id="stg-3">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I see. How is that calculated? </div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/relieved_new.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[How do you wish to proceed?]]></question>
+			<answer goto="P1OK9" score="5"><![CDATA[I can assure you that MBFS knows that there will be a certain amount of reasonable wear and use on the car at the end of the lease. In fact, they’ve created a useful guide that you can use for yourself. Let me show you something. Do you have a credit card?]]></answer>	
+			<answer goto="P1NOK9NOK1" score="0"><![CDATA[I can't tell you the exact amount because it depends on how you take care of your car. The more careful you are the less the bill will be!]]></answer>
+			<feedback><![CDATA[<p>While it is true the customer is responsible for excess wear and use charges, many customers find it reassuring to know that they are usually not charged for damage that can easily fit within the dimensions of a standard credit card. It's best to relate the discussion directly to the customer’s concern.</p>]]></feedback>
+		    </page>	
+			
+			<page page-type="assessment" page-id="P1OK10" stage-id="stg-4">
+			<bodyContent>
+				<user1Comment><![CDATA[<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Wow Brian, I had no idea that a Single-Pay Lease is so advantageous to a cash customer like me! Thank you so much for recommending it.</div>]]></user1Comment> 
+			</bodyContent>
+			<imgContent><![CDATA[<img src="course/p1/assets/images/happy.png" class="wow fadeInUp" alt="P1OK5"/>]]></imgContent>
+			<helpText><![CDATA[Select the best option, then view the customer’s reaction.]]></helpText>
+			<question><![CDATA[Nice job! You have successfully addressed all of Rhea’s concerns. Now, how would you like to proceed?]]></question>
+			<answer goto="P1OK11" score="5"><![CDATA[You’re welcome! I try to make all of my cash customers aware of this option. In fact, many of my customers who have equity in their trade vehicle find value in this program as well. These customers often find that they have other uses for those available funds. So, would you like to go with the Mercedes-Benz Single-Pay Lease option today?]]></answer>	
+			<answer goto="P1NOK11" score="0"><![CDATA[You’re welcome! Most of my cash customers agree this is the best use of their funds.]]></answer>
+			<feedback><![CDATA[<p>Good job! You have addressed all of Rhea’s concerns. Reinforce your discussion by letting her know she could also benefit in the event of a total loss of the vehicle since all Single-Pay Leases include MBFS GAP protection.</p>]]></feedback>
+		    </page>	
+
+		<page page-type="failure" page-id="P1NOK2NOK2" stage-id="stg-1">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>Not a good response! While cash is not always the best way to acquire a vehicle, avoid using absolute statements like this. Rhea may have good reason to want to pay cash today but we haven’t taken the time to learn what those reasons are. Next time, slow down, ask questions, and see if you can learn what is most important to the customer. In this way, you will know which financing options to present that best suit Rhea’s needs. We recommend that you restart the simulation.</p><p>Ok, so you made a sale, but you have possibly missed out on the advantages that leasing has to offer Rhea. Click <a href="player/pdf/Customer_Benefits.pdf" target="_blank" title="Customer Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div>
+			
+			<div class="right_container">
+						<div class="imgContentbox">
+			<img src="course/p1/assets/images/Disappointed.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> No, thank you. I have my reasons to pay cash. I’ll write you a check and be on my way.</div></div>			
+	
+						
+			<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			
+			</bodyContent>			
+		</page>		
+
+
+		<page page-type="failure" page-id="P1NOK2NOK1" stage-id="stg-1">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>You seem to be in a hurry to close the sale today! Are you sure you presented all possible financing options? Next time, slow down, ask questions, and see if you can learn what is most important to the customer. In this way, you will know which financing options to present that best suit Rhea’s needs. We recommend that you restart the simulation.</p><p>Ok, you made a sale, but you have possibly missed out on the advantages that leasing has to offer Rhea. Click <a href="player/pdf/Customer_Benefits.pdf" target="_blank" title="Customer Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer. </p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Smiling_01.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Thank you!</div></div>
+			
+			<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+		
+
+
+		<page page-type="failure" page-id="P1NOK3NOK1" stage-id="stg-2">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>It is important to listen to what Rhea is saying before proposing a solution to make sure it is relevant and addresses her specific concerns. Next time, work with your customer to identify their individual needs and then recommend a solution. This approach will not only benefit your customer but will ensure that you realize the dealer benefits of leasing as well! We recommend that you restart the simulation.</p><p>Ok, you made a sale, but you have possibly missed out on the advantages that leasing has to offer Rhea and your dealership. Click <a href="player/pdf/Dealership_Benefits.pdf" target="_blank" title="Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer. </p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Smiling_01.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Well, thank you for understanding. I’ll write you a check and be on my way.</div></div>
+			
+			<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+		
+
+
+		<page page-type="failure" page-id="P1MB3NOK1" stage-id="stg-2">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>Not a good response! Avoid using absolute statements like this. We must always be careful not to be perceived as giving financial advice to our customers. It is critical to present only the specific program details in a fully transparent manner, avoiding even the slightest perception of influencing the customer’s decision. We recommend that you restart the simulation.</p><p>Ok, you have made a sale, but you have possibly missed out on the advantages that leasing has to offer Rhea and your dealership. Click <a href="player/pdf/Dealership_Benefits.pdf" target="_blank" title="Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer your dealership.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Disappointed.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I really don't see how leasing will benefit me. Thanks, but I think I'll go ahead and pay cash.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+
+		
+
+
+		<page page-type="failure" page-id="P1NOK4NOK1" stage-id="stg-3">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>Understand Rhea’s concerns first before proposing a solution. Remember to slow down, ask questions, and identify what is most important to Rhea. In this way, you will optimize the time spent with her by presenting a tailored solution. We recommend that you restart the simulation.</p><p>Ok, you have made a sale, but you have possibly missed out on the advantages that leasing offers you and Rhea. Click <a href="player/pdf/Customer_Dealership_Benefits.pdf" target="_blank" title="Customer Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Disappointed.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I’m not really interested, thank you. I have my reasons to pay cash. I’ll write you a check and be on my way.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+		
+
+
+		<page page-type="failure" page-id="P1NOK6" stage-id="stg-3">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>Never associate an Annual Percentage Rate (APR) or finance charges with a consumer lease. This is a common mistake. The cost of a lease is calculated by using a money factor or leasing factor. It is very important to use the proper <a href="javascript:void(0);" class="glossary_popup">terminology </a> &nbsp;when educating our customers about their leasing options. We recommend that you restart the simulation.</p><p>Ok, you have made a sale but you have possibly missed out on the advantages that leasing has to offer Rhea. Click <a href="player/pdf/Customer_Benefits.pdf" target="_blank" title="Customer Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/skeptical_new.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> That doesn’t sound right to me. I think I’ll just write you a check and be on my way.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+		
+
+
+		<page page-type="failure" page-id="P1NOK5" stage-id="stg-3">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>Not a great response. You missed an opportunity to establish yourself as a credible financing resource to Rhea. Remember, Rhea has concerns regarding ownership. Slow down, ask questions, and try to understand why owning her vehicle is important to Rhea. We recommend that you restart the simulation.</p><p>Ok, you have made a sale, but by accepting a cash purchase you have missed out on the potential advantages that leasing has to offer you, Rhea, and your dealership. Click <a href="player/pdf/Customer_Dealership_Benefits.pdf" target="_blank" title="Customer Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Slight_Smile.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Thank you, I’ll write you a check and be on my way.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+		
+
+
+		<page page-type="failure" page-id="P1MB5NOK1" stage-id="stg-3">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>While a Single-Pay Lease can be an attractive option to a cash purchase, never create the impression that you are giving financial advice to your customer. It is your role to properly disclose the features and benefits of leasing to your customer and then let the customer decide what the best option for them is. We recommend that you restart the simulation.</p><p>Ok, you have made a sale, but you have possibly missed out on the advantages that leasing has to offer Rhea and your dealership. Click <a href="player/pdf/Dealership_Benefits.pdf" target="_blank" title="Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer your dealership.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Disappointed.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I disagree; I really don't see how this leasing option will help me. I think I'll stick with paying cash.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+		
+
+		<page page-type="failure" page-id="P1NOK7NOK1" stage-id="stg-3">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>While a Single-Pay Lease can be an attractive option to a cash purchase, never create the impression that you are giving financial advice to your customer. It is your role to properly disclose the features and benefits of leasing to your customer and then let the customer decide what the best option for them is. We recommend that you restart the simulation.</p><p>Ok, you have made a sale, but you have possibly missed out on the advantages that leasing has to offer Rhea and your dealership. Click <a href="player/pdf/Customer_Dealership_Benefits.pdf" target="_blank" title="Customer Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Irritated.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Thanks, but as I said before, cash works for me. I’ll write you a check and be on my way.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+		
+
+		
+		<page page-type="failure" page-id="P1NOK8" stage-id="stg-3">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>While it is true that Prepaid Maintenance (PPM) has the same upfront cost in both leasing and traditional financing, there can be additional savings if the customer chooses to include PPM as part of their lease calculation. Make sure you fully understand this important leasing advantage before discussing leasing and vehicle maintenance with Rhea. Else, you could lose credibility with her. We recommend that you restart the simulation.</p><p>Nice try. However, it is important to take the time to ask questions and fully understand Rhea’s concerns. By not doing so, you may have lost this sale and possibly missed out on enjoying the benefits that leasing has to offer you, Rhea, and your dealership. Click <a href="player/pdf/Customer_Dealership_Benefits.pdf" target="_blank" title="Customer Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/In_Doubt.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Doesn’t sound like leasing will benefit me. I need to think about it. Thanks for your time.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		
+ 
+		<page page-type="failure" page-id="P1NOK9NOK1" stage-id="stg-3">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>Not every leasing customer will receive a bill for excess wear and use charges. However, many customers find it reassuring to know they can track potential excess wear and use charges by using the Credit Card test. Up to five scratches, dings or dents per exterior panel, or tears, cuts, holes, burns, or stains to the interior that fit beneath a credit card are generally not chargeable. And as always, make sure you review the excess wear and use guidelines contained in the MBFS lease contract for further details as well as the most recent copy of the First Class Finish<sup>®</sup> Lease-End Guide. We recommend that you restart the simulation.</p><p>Nice try. However, it is important to take the time to ask questions and respond to Rhea’s concerns. By not doing so, you may have lost this sale and possibly missed out on enjoying the benefits that leasing has to offer you, Rhea, and your dealership. Click <a href="player/pdf/Customer_Dealership_Benefits.pdf" target="_blank" title="Customer Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Disappointed.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I’m not comfortable with that, I wish I knew more about how those charges are calculated.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>		 
+
+		<page page-type="failure" page-id="P1NOK10" stage-id="stg-3">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>While this is an important advantage of the Single-Pay Lease to both you and Rhea, are you sure you have addressed her specific concern? It is important to take the time to reinforce all the customer benefits of leasing and reassure the customer that they have made the right financial decision for them. We recommend that you restart the simulation.</p><p>Nice try. But you haven’t specifically addressed Rhea’s question. You may have lost this sale and possibly missed out on enjoying the benefits that leasing has to offer you, Rhea, and your dealership. Click <a href="player/pdf/Customer_Dealership_Benefits.pdf" target="_blank" title="Customer Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Disappointed.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> I understand, but I’ll need to think about it.</div></div>
+			
+		<div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>	
+		
+
+
+		<page page-type="failure" page-id="P1NOK11" stage-id="stg-4">
+			<failureHeader><![CDATA[]]></failureHeader>
+			
+			<bodyContent><![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>While a Single-Pay Lease can be an attractive option to a cash purchase, never create the impression that you are giving financial advice to your customer. It is your role to properly disclose the features and benefits of leasing to your customer and then let the customer decide what the best option for them is. We recommend you restart the simulation.</p><p>Nice try. However, it is important to take the time to reinforce the advantages of leasing and reassure the customer that they have made the right financial decision for them. By not doing so, you may have lost this sale and possibly missed out on enjoying the benefits that leasing has to offer you, Rhea, and your dealership. Click <a href="player/pdf/Customer_Dealership_Benefits.pdf" target="_blank" title="Customer Dealership Benefits">here </a> &nbsp;to review some of the many advantages leasing has to offer.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/Disappointed.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Ok, but I think I should check with my accountant first. I don’t want to rush into making a decision now.</div></div>
+			
+		    <div class="start_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>]]>
+			</bodyContent>			
+		</page>	
+		
+
+		<page page-type="success" page-id="P1OK11" stage-id="stg-4">
+			<successHeader>
+				<![CDATA[ Congratulations! ]]>
+			</successHeader>
+			<bodyContent>
+				<![CDATA[<div class="left_container">		
+			
+			<h3 class="bluehead align-left"><img src="player/images/Coach-for-Drop-Off.png" class="" alt="Coach"/>Coach Says</h3>
+					
+			<div class="coach_text"><p>Congratulations! You helped Rhea choose the financing option that best meets her needs. And you benefit, too! Statistics tell us that customers who choose to lease are among the most satisfied, loyal, and profitable customers in the industry!</p><p>We hope you found this simulation useful. Remember, you can use the highlights of this cash-customer simulation when discussing financing options with other customers as well, including those considering credit unions and/or conventional financing. Happy Selling! </p><p>Select 'Performance Summary' to review how you did in this simulation. Or, you could start over by selecting 'Start'.</p></div>
+			<div class="left_link"></div>
+			
+			</div><div class="right_container">
+			
+			<div class="imgContentbox">
+			<img src="course/p1/assets/images/happy.png" alt="P1NOK4"/>
+			<div class="user1comment wow fadeInUp" data-wow-delay="0.4s"><b>Rhea:</b> Absolutely! Thank you again for letting me know the Single-Pay Lease was an option for me. And, I'll be sure to come back and see you again when this lease term is up. </div></div>
+			
+			<div class="modal-footer"><div class="summery_button"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-summry">Performance Summary</a><h5 class="instruction summery_inst">Click to review how you did in this simulation.</h5></div><div class="start_button_success"><a href="javascript:void(0)" class="waves-effect waves-light btn btn-yellow perf-start">Start</a><h5 class="instruction">Click to go back to the start.</h5></div></div></div>
+				]]>
+			</bodyContent>
+		</page>
+		
+		
+	</pages>
+</profile>

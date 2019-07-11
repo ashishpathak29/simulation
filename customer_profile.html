@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <title>Advanced Leasing Strategies</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="player/fonts/fonts.css" rel="stylesheet">
+    <link href="libraries/css/materialize.min.css" rel="stylesheet">
+    <link href="libraries/css/animate.css" rel="stylesheet">
+    <link href="player/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+    <input type="hidden" id="pg_topic" name="pg_topic" value="customer_profile.html" />
+    <div class="simulation-area1 full"> <!-- Added 1 after area by manish-->
+        <div class="intro-content full simulation customer_profile">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 ">
+                        <div class="profileshownwrap full">
+                            <div class="profilebox" id="profile1">
+                                <div class="imgprofileboxtxt">
+                                
+                                    <div class="col s12 m12  customer_profile_desc">
+                                   
+                                    <p>During this simulation, you will play the role of Brian Harper, an F&I Manager. It’s a busy Saturday morning at your dealership.  Ed, your sales manager, introduces you to Rhea Scullin, a brand new customer interested in purchasing a GLE350.   </p><p class="instruction_new">Select the <span class="blue_arrow"><img src="player/images/i-text-next.png" alt="Next"/></span> arrow to proceed.</p>
+                                   </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+    <a href="javascript:void(0)" onClick="parent.gotopage('objective.html')" class="arrowright arrowleft bounceleft prev-arrw" title="Previous"><img src="player/images/arrowslide.png" alt="Previous"/></a>
+
+
+
+ <a href="javascript:void(0)" onClick="parent.gotopage('simulation.html')" class="arrowright bounceleft next-arrw" title="Next"><img src="player/images/arrowslide.png" alt="Next"/></a>
+
+    <div id="modal2" class="modal resultpopup">
+        <div class="modal-content"></div>
+    </div>
+    <div id="modal4" class="modal resultpopup">
+        <div class="modal-content"></div>
+    </div>
+    <script src="libraries/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="libraries/js/materialize.min.js" type="text/javascript"></script>
+    <script src="libraries/js/Chart.min.js" type="text/javascript"></script>
+    <script src="libraries/js/wow.min.js" type="text/javascript"></script>
+    <!--<script src="libraries/js/owl.carousel.min.js" type="text/javascript"></script> -->
+    <script src="libraries/js/custom.js" type="text/javascript"></script>
+    <!--<script src="libraries/js/indexCustom.js" type="text/javascript"></script>-->
+    <script src="player/js/core.js" type="text/javascript"></script>
+    <script>
+
+	parent.blnNavigation = true;
+	parent.blnSimulation = false;
+	parent.blnDropoff = false;
+    	$(function(){
+		$(window.top.document).find('.next-btn').show();
+		$(window.top.document).find('.prev-btn').show();
+			/*$(window.top.document).on('click','.prev-btn',function(){
+				$(this).show();
+				//$(window.top.document).find('.next-btn').hide();
+			});
+			     $(window.top.document).find('.next-btn').show();
+			 $(window.top.document).find('.prev-btn').hide();*/
+		})
+    </script>
+</body>
+
+</html>

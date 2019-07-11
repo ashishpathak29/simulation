@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" >
+<title>Advanced Leasing Strategies</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="player/fonts/fonts.css" rel="stylesheet">
+<link href="libraries/css/materialize.min.css" rel="stylesheet">
+<link href="libraries/css/animate.css" rel="stylesheet">
+<link href="player/css/style.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+      <style>
+    .help_pagination{ display:none}
+    </style>
+</head>
+<body>
+<input type="hidden" id="pg_topic" name="pg_topic" value="help.html" />
+<div class="page-wrapper full">
+  <!--Simulation Start-->
+  <!--<div class="simulation-area full help"> <img src="player/images/help-screen1.jpg" alt="Help" class="desktophelp-img" /> </div>-->
+  <!--Simulation End-->
+  <!--Slide Arrow Start-->
+  <div class="simulation-area full help">
+    <div id="helpScreen1" class="helpScreen">
+      <div class="modal-content"> <a href="javascript:void(0);" onClick="getPages('p1')" class="close waves-effect waves-light modal-action modal-close startcon" title="Close"><i class="material-icons "></i></a>
+        <ul id="tabs-swipe-demo" class="tabs result-tabs">
+          <li class="tab col s3"><a class="active help1" href="#test-swipe-1">Navigation Help</a></li>
+          <li class="tab col s3"><a class="help2" href="#test-swipe-2">Simulation Help</a></li>
+          <li class="tab col s3"><a class="help2" href="#test-swipe-3">Drop-off Screen Help</a></li>
+        </ul>
+        <div id="test-swipe-1" class="col s12 result-tabs-content">
+          <!--<div class="desctxt">PLACEHOLDER</div>-->
+          <img src="player/images/help-screen-nav.jpg" alt="Help" class="desktophelp-img" /><img src="player/images/M-Welcome.png" alt="Help" class="mobhelp-img" /><img src="player/images/Welcome-Help_ipad.png" alt="Help" class="ipad-img" /> </div>
+          
+          
+          
+        <div id="test-swipe-2" class="col s12 result-tabs-content">  <img src="player/images/help-screen.jpg" alt="Help" class="desktophelp-img" /><img src="player/images/M-Simulation.png" alt="Help" class="mobhelp-img" />  <img src="player/images/Simulatione-Help_ipad.png" alt="Help" class="ipad-img" />  </div>
+        <div id="test-swipe-3" class="col s12 result-tabs-content"> <img src="player/images/Drop_Off.jpg" alt="Help" class="desktophelp-img" /><img src="player/images/M-DropOff.png" alt="Help" class="mobhelp-img" /> <img src="player/images/Drop-off-Help_ipad.png" alt="Help" class="ipad-img" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="help_pagination"> <a href="javascript:void(0)" onClick="parent.gotopage('simulation.html')" class="arrowright arrowleft bounceleft prev-arrw " title="Previous"><img src="player/images/arrowslide.png" alt="Previous"/> </a> </div>
+<!--Slide Arrow End-->
+<!-- four model Popup Start -->
+</div>
+<!-- four model End -->
+<div id="modal2" class="modal resultpopup">
+  <div class="modal-content"></div>
+</div>
+<div id="modal4" class="modal resultpopup">
+  <div class="modal-content"></div>
+</div>
+<script src="libraries/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="libraries/js/materialize.min.js" type="text/javascript"></script>
+<script src="libraries/js/Chart.min.js" type="text/javascript"></script>
+<script src="libraries/js/wow.min.js" type="text/javascript"></script>
+<script src="libraries/js/custom.js" type="text/javascript"></script>
+<script src="libraries/js/indexCustom.js" type="text/javascript"></script>
+<script src="player/js/core.js" type="text/javascript"></script>
+
+<script>
+    	$(function(){
+		window.parent.document.querySelector('header').style = 'display:none';
+		window.parent.document.querySelector('header').classList.add('hide');
+		window.parent.document.querySelector('.main-content').classList.add('padding_bottom');
+		window.parent.document.querySelector('.main-content').style = 'padding-bottom: calc(100vh - -40px)';
+		$(window.top.document).find('.next-btn').hide();
+		$(window.top.document).find('.prev-btn').show();
+	
+	
+	$(document).on('click','.help1',function(){
+	$('.arrow_prev').show();
+	$('.arrow_next').show();
+	$('.help_prev').show();
+	$('.help_next').show();
+	});
+	$(document).on('click','.help2',function(){
+	$('.arrow_prev').hide();
+	$('.arrow_next').hide();
+	$('.help_prev').hide();
+	$('.help_next').hide();
+	});
+		
+	
+		})
+    </script>
+
+</body>
+</html>

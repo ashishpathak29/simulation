@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'daimler_cabold';
+    src: url('../fonts/daimlerca-bold-webfont.woff2') format('woff2'),
+         url('../fonts/daimlerca-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cac_arabbold';
+    src: url('../fonts/daimlercacarab-bold-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercacarab-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cac_arabregular';
+    src: url('../fonts/daimlercacarab-regular-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercacarab-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cacbold';
+    src: url('../fonts/daimlercac-bold-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercac-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cacregular';
+    src: url('../fonts/daimlercac-regular-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercac-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_caregular';
+    src: url('../fonts/daimlerca-regular-webfont.woff2') format('woff2'),
+         url('../fonts/daimlerca-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cebold';
+    src: url('../fonts/daimlerce-bold-webfont.woff2') format('woff2'),
+         url('../fonts/daimlerce-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_ceregular';
+    src: url('../fonts/daimlerce-regular-webfont.woff2') format('woff2'),
+         url('../fonts/daimlerce-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cs_arabdemi';
+    src: url('../fonts/daimlercsarab-demi-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercsarab-demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cs_arablight';
+    src: url('../fonts/daimlercsarab-light-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercsarab-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cs_arabregular';
+    src: url('../fonts/daimlercsarab-regular-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercsarab-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_csbold';
+    src: url('../fonts/daimlercs-bold-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'daimler_csbold_italic';
+    src: url('../fonts/daimlercs-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_csdemi';
+    src: url('../fonts/daimlercs-demi-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_csdemi_italic';
+    src: url('../fonts/daimlercs-demiitalic-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-demiitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_csextrabold';
+    src: url('../fonts/daimlercs-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_csextrabold_italic';
+    src: url('../fonts/daimlercs-extrabolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_csregular_italic';
+    src: url('../fonts/daimlercs-italic-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cslight';
+    src: url('../fonts/daimlercs-light-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_cslight_italic';
+    src: url('../fonts/daimlercs-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'daimler_csregular';
+    src: url('../fonts/daimlercs-regular-webfont.woff2') format('woff2'),
+         url('../fonts/daimlercs-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
